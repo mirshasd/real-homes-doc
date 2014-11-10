@@ -193,7 +193,7 @@
                     <article class="hentry" id="introduction">
                         <div class="entry-content">
                             <h1 class="entry-title">Introduction</h1>
-                            <p>This documentation is last updated on 04 June 2014.</p>
+                            <p>This documentation is last updated on 10th November 2014.</p>
                             <p>Thank you for purchasing Real Homes WordPress Theme . If you have any question that is beyond the scope of this documentation, Please feel free to create a support ticket using <a href="http://support.inspirythemes.com/" target="_blank">Our Support Site</a>.</p>
                             <p class="bg-warning text-warning">
                                 <strong>Disclaimer:</strong><br/> We offer limited support for theme customers. We only provide support for our themes and their core features. We cannot guarantee our themes will work properly with all third party plugins and server environments. If you plan on adding numerous plugins to this theme then please note, We cannot facilitate support for any conflicts that might arise with this theme's default functionality. The Real Homes WordPress theme is presented as it is.
@@ -221,29 +221,61 @@
                             <p>In start you must have a working version of WordPress already installed. For information in regard to installing the WordPress CMS, please see the WordPress Codex <a target="_blank" href="http://codex.wordpress.org/Installing_WordPress">Installing WordPress</a></p>
                             <p>Once you have a working of version of WordPress, you need to download <a data-lightbox="all-files" href="assets/common-images/all-files.png">All Files and Documentation</a> from themeforest and extract the downloaded zip to get various files including <strong>realhomes.zip</strong>.</p>
 
-                            <h4>Install Theme Via WordPress Dashboard</h4>
+                            <h4>Step 1: Install Theme Via WordPress Dashboard</h4>
 
                             <ol>
                                 <li>Go to 'Appearance &gt; Themes' section</li>
-                                <li>Click 'Add New' and select the 'Upload Theme' option </li>
-                                <li>Choose the <strong>realhomes.zip</strong> file and press 'Install Now'</li>
-                                <li>Once the theme is uploaded you need to activate it.</li>
+                                <li>Click 'Add New' and select the 'Upload Theme' option
+                                    <br/>
+                                    <br/>
+                                    <img src="assets/realhomes/install/1.png" alt=""/><br/><br/>
+                                    <img src="assets/realhomes/install/1-1.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Choose the <strong>realhomes.zip</strong> file and press 'Install Now'
+                                    <br/>
+                                    <br/>
+                                    <img src="assets/realhomes/install/1-2.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Once the theme is uploaded you need to activate it.<br/>
+                                    <br/>
+                                    <img src="assets/realhomes/install/1-3.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Activating theme will take you to the theme options, <strong>Save the Theme Options Once</strong> So that theme options default values gets stored in the database.</li>
                             </ol>
                             <p class="bg-info text-info">
                                 if you face any problem during upload through dashboard, please upload the theme using FTP as guided below.
                             </p>
 
-                            <h3>Install Theme Via FTP</h3>
+
+                            <h3>Step 1(Alternative): Install Theme Via FTP</h3>
                             <ol>
                                 <li>Access your hosting server using an ftp client like <a target="_blank" href="https://filezilla-project.org/">FileZilla</a></li>
                                 <li>Go to the 'wp-content/themes' folder of your WordPress installation</li>
                                 <li>Extract the <strong>realhomes.zip</strong> file and put the <strong>realhomes</strong> folder in 'wp-content/themes/' folder</li>
                                 <li>Go to 'WordPress Dashboard &gt; Appearance &gt; Themes' section to activate the theme</li>
+                                <li>Activating theme will take you to the theme options, <strong>Save the Theme Options Once</strong> So that theme options default values gets stored in the database.</li>
                             </ol>
 
-                            <h3>Install Child Theme</h3>
+                            <hr/>
+
+                            <h3>Step 2: Install Required Plugins</h3>
+                            After you have installed and activated the theme, plus saved the theme options. Go to <strong>Appearance &gt; Themes</strong> there'll be a message of <strong>required</strong> plugin at the top of the WordPress dashboard. <br><br>
+                            <img src="assets/realhomes/install/2-1.png" alt=""><br><br>
+                            Click on <strong>Begin Installing Plugin</strong> and it will take you to <strong>Appearance &gt; Install Plugins</strong> <br/><br/>
+                            <img src="assets/realhomes/install/2-2.png" alt=""><br><br>
+                            Now, Install the required plugin as demonstrated in animaged gif below. <br/><br/>
+                            <img src="assets/realhomes/install/install-plugins.gif" alt="">
+
+                            <hr/>
+
+                            <h3>Step 3: Install Child Theme</h3>
                             <p>It is better to use child theme as if you need to modify anything you modify in child theme only. This way you can easily update your parent theme whenever new update becomes available on themeforest. You can read more about child theme from <a target="_blank" href="http://codex.wordpress.org/Child_Themes">here.</a> </p>
                             <p>To install child theme, you need to upload the <strong>realhomes-child.zip</strong> and activate it in the same way as you uploaded and activated the parent theme's <strong>realhomes.zip</strong>.</p>
+
+                            <hr/>
+
+                            <p><strong>Next Step is to Import Demo Contents</strong></p>
+
                         </div>
                     </article>
 
@@ -270,7 +302,10 @@
                             <img src="assets/realhomes/install/8.png" alt=""/><br/><br/>
                             <p>After that is done, you will have bunch of posts, pages, properties and other contents as on the theme demo.</p>
                             <img src="assets/realhomes/install/9.png" alt=""/><br/><br/>
-                            <p>Next step is to configure menu.</p>
+
+                            <hr/>
+
+                            <p><strong>Next Step is to Configure Menu</strong></p>
                         </div>
                     </article>
 
@@ -279,6 +314,8 @@
                             <h1 class="entry-title">Configure Menus</h1>
                             <p>Navigate to <strong>Appearance &gt; Menus</strong> and use the Already Imported Menu from XML and assign it to theme location "Main Menu" from <strong>Menu Settings</strong> section below menu. After that save the menu. As pointed in screenshot below.</p>
                             <img src="assets/realhomes/install/10.png" alt=""/><br/><br/>
+                            <hr/>
+                            <p><strong>Next Step is to Configure Reading Settings</strong></p>
                         </div>
                     </article>
 
@@ -314,6 +351,8 @@
                             <p>I am assuming that you have imported the XML successfully and you have home page and news page available for use. If this is not the case then simply create a new page using <strong>Home Template</strong> and name it as Home after that create another page using default template and name it as News.</p>
                             <p>To configure reading settings you need to visit <strong>WordPress Admin &gt; Settings &gt; Reading</strong> and choose that front page displays as static page. Then select Home as Front Page and News as Posts Page. As, displayed in screen shot below.</p>
                             <img src="assets/realhomes/install/11.png" alt=""/><br/><br/>
+                            <hr/>
+                            <p><strong>Next Step is to Configure Permalink Settings</strong></p>
                         </div>
                     </article>
 
@@ -1209,6 +1248,7 @@
     <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.js"></script>
     <script type="text/javascript" src="assets/js/lightbox.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/purl.js"></script>
     <script type="text/javascript" src="assets/js/custom.js"></script>
 </body>
 </html>
