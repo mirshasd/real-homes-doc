@@ -171,6 +171,19 @@
                             <li>
                                 <a href="#" class="menu-item">
                                     <span class="main-menu-item">
+                                        <i class="glyphicon glyphicon-font"></i>WPML<span class="glyphicon glyphicon-chevron-right"></span>
+                                    </span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a class="sub-menu-item" href="#wpml-basic-setup">WPML Basic Setup</a></li>
+                                    <li><a class="sub-menu-item" href="#wpml-home-news-page">Home & News Page</a></li>
+                                    <li><a class="sub-menu-item" href="#wpml-string-translation">String Translation</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#" class="menu-item">
+                                    <span class="main-menu-item">
                                         <i class="glyphicon glyphicon-edit"></i>Modify Theme<span class="glyphicon glyphicon-chevron-right"></span>
                                     </span>
                                 </a>
@@ -1192,6 +1205,50 @@
                                 </div>
                                 <br/>
                                 <hr/>
+                                <div class="row">
+
+                                    <div class="col-md-12">
+                                        <h4>Columns</h4>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <strong>2 Columns Shortcode Example</strong>
+                                        <br/><br/>
+                                        <img class="light-border" src="assets/realhomes/shortcodes/9-1.png" alt=""/>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <strong>3 Columns Shortcode Example</strong>
+                                        <br/><br/>
+                                        <img class="light-border" src="assets/realhomes/shortcodes/9-2.png" alt=""/>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                    <br/><br/>
+
+                                    <div class="col-md-6">
+                                        <strong>4 Columns Shortcode Example</strong>
+                                        <br/><br/>
+                                        <img class="light-border" src="assets/realhomes/shortcodes/9.png" alt=""/>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <strong>6 Columns Shortcode Example</strong>
+                                        <br/><br/>
+                                        <img class="light-border" src="assets/realhomes/shortcodes/9-3.png" alt=""/>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+                                    <br/><br/>
+
+                                    <div class="col-md-6">
+                                        <strong>Mix Columns Shortcode Example</strong>
+                                        <br/><br/>
+                                        <img class="light-border" src="assets/realhomes/shortcodes/9-4.png" alt=""/>
+                                    </div>
+
+                                </div>
+                                <br/>
+                                <hr/>
                             </div>
                         </div>
                     </article>
@@ -1203,6 +1260,153 @@
                             <ol>
                                 <li>For translation to only one language please visit <a target="_blank" href="http://support.inspirythemes.com/knowledgebase/how-to-translate-your-theme-to-your-language/">This Knowledge Base Article</a></li>
                                 <li>For translation to multiple languages you can use <a target="_blank" href="http://wpml.org/">WPML Plugin</a></li>
+                            </ol>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="wpml-basic-setup">
+                        <div class="entry-content">
+                            <h1 class="entry-title">WPML Basic Setup</h1>
+                            Please follow the steps below to configure the basic settings for WPML Plugin.
+
+                            <ol>
+                                <li>Install and Activate <strong>WPML Multilingual CMS</strong> Plugin.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/wpml/1.png" alt=""/><br/><br/>
+                                </li>
+                                <li> Go to <strong>WPML &gt; Languages</strong>.</li>
+                                <li> Select <strong>English</strong> as Current Language and <strong>Go Next</strong>.</li>
+                                <li> Select the other languages for your site and <strong>Go Next</strong>.</li>
+                                <li> Leave all the section on this page as it is and <strong>Go Next</strong>.</li>
+                                <li> Register WPML if you want to receive automatic updates OR press "Remind Me Later" button.</li>
+                                <li> Click <strong>Finish</strong> Button, Now you will be taken to <strong>WPML > Languages</strong> page but with different interface. If not then manually go to <strong>WPML > Languages</strong> Page.</li>
+                                <li> Look for <strong>Language URL Format</strong> section and choose the url format that suites your needs.
+                                    I am choosing the 1st one with languages directories at the end. Save the changes.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/wpml/7.png" alt=""/><br/><br/>
+                                </li>
+                                <li> Look for <strong>Language Switchet Options</strong> section and then look for <strong>What to include in the language switcher</strong> option.
+                                    Choose to display Flag with in language switcher and save the changes. Leave all other options as it is.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/wpml/6.png" alt=""/><br/><br/>
+                                </li>
+                                <li> Leave all other sections as it is.</li>
+                                <li> Now, Install and activate <strong>WPML String Translation</strong> plugin.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/wpml/2.png" alt=""/><br/><br/>
+                                </li>
+                                <li> After that Go to <strong>WPML  > Theme and Plugin Localization</strong>.</li>
+                                <li> 1st Option is <strong>“Select how to localize the theme”</strong>, Choose <strong>Translate by WPML</strong> and Save.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/wpml/3.png" alt=""/><br/><br/>
+                                </li>
+                                <li> Next Option is <strong>“Select how to get translations for WordPress”</strong>, Choose the 1st options <strong>“WPML will automatically download translations for WordPress”</strong> and save.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/wpml/4.png" alt=""/><br/><br/>
+                                </li>
+                                <li> Skip the Option “Language locale Settings”.</li>
+                                <li> Next Options is “Strings in the Theme”, Press the Scan the theme for Strings Button and Wait for results.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/wpml/5.png" alt=""/><br/><br/>
+                                </li>
+                                <li>
+                                    Now, Go to <strong>WPML > String Translation</strong> section and configure the following settings.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/wpml/8.png" alt=""/><br/>
+                                    <br/>
+                                    <img class="light-border" src="assets/realhomes/wpml/9.png" alt=""/><br/>
+                                    <br/>
+                                    <img class="light-border" src="assets/realhomes/wpml/10.png" alt=""/><br/><br/>
+                                </li>
+                                <li> Basic settings are complete and you can translate a string that do not exist in post, pages and taxonomies using <strong>WPML > String Translation</strong> Section for more information
+                                    <a target="_blank" href="http://wpml.org/documentation/getting-started-guide/string-translation/">http://wpml.org/documentation/getting-started-guide/string-translation/</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="wpml-home-news-page">
+                        <div class="entry-content">
+                            <h1 class="entry-title">Translate Home & News Page</h1>
+
+                            <h3>1. Duplicate Home Page for Other Language</h3>
+                            <ol>
+                                <li>Go to <strong>Pages</strong> on WordPress admin side and look for <strong>Home</strong> Page</li>
+                                <li>Open the <strong>Home</strong> page for editing and look for <strong>Language</strong> meta box in right sidebar.</li>
+                                <li>Select <strong>Duplicate</strong> in front of your desired other language. and press <strong>Duplicate</strong> button. The page will refresh.
+                                    <br/><br/>
+                                    <strong>Note:</strong> You can edit the duplicated page if you need to but we are not doing it in this documentation.
+                                    <br/><br/>
+                                </li>
+                                <li>Now you can go to the Home page on front end ( visit the site ) and choose the translated home page's language from language switcher in header top bar and you will see that page will refresh and URL will be changed to your newly translated homepage.</li>
+                                <li>Do not worry about lots of un-translated things in header, footer and content area. You will learn to translate those one by one.</li>
+                            </ol>
+
+                            <h3>2. Duplicate News Page for Other Language</h3>
+                            <ol>
+                                <li>Go to <strong>Pages</strong> on WordPress admin side and look for <strong>News</strong> Page</li>
+                                <li>Duplicate it the same way we duplicated home page. ( As explained above )</li>
+                                <li>Edit the duplicated news page and provide it translated title. As displayed below.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/wpml/15.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Update the page after editing.</li>
+                            </ol>
+
+                            <h3>3. Update Reading Settings</h3>
+                            <ol>
+                                <li>After creating Translated Pages for Home and news Go to <strong>Settings > Reading</strong> and configure the translated pages as <strong>Front Page</strong> and <strong>Posts Page</strong>.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/wpml/17.png" alt=""/><br/><br/>
+                                </li>
+                            </ol>
+
+                            <h3>4. WPML Menus Sync</h3>
+                            <ol>
+                                <li>To setup language specific menus, Go to <strong>WPML > WPML Menus Sunc</strong>
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/wpml/18.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Click the <strong>Sync</strong> button.</li>
+                                <li>
+                                    Select the pages that you have translated + the Main Menu translation to other language.
+                                    <br/> Press <strong>Apply Changes</strong> and wait for the menus to be synced.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/wpml/19.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Once syncing is complete, Visit the home page in other language and you will see that translated menu will appear in place of english menu.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/wpml/20.png" alt=""/><br/><br/>
+                                </li>
+                            </ol>
+
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="wpml-string-translation">
+                        <div class="entry-content">
+                            <h1 class="entry-title">String Translation</h1>
+                            <p>You can translate a string that does not exist in post, pages and taxonomies using <strong>WPML > String Translation</strong> section.</p>
+                            <h3>String Translation Example</h3>
+                            <ol>
+                                <li>We will learn how to translate site name, Which is "Theme Test" for this example.</li>
+                                <li>Go to <strong>WPML > String Translation</strong> section and search for "Theme Test".
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/wpml/11.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Once found, Translate it as displayed below.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/wpml/12.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Translate the tag line using the same search.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/wpml/13.png" alt=""/><br/><br/>
+                                </li>
+                                <li>Now view the front end of your other language home page and you will have the site name and tag line translated.
+                                    <br/><br/>
+                                    <img class="light-border" src="assets/realhomes/wpml/14.png" alt=""/><br/><br/>
+                                </li>
+                                <li> So, You can translate all strings that are out of post's or page's content area.</li>
                             </ol>
                         </div>
                     </article>
