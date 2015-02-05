@@ -10,6 +10,7 @@ body {
 
 img {
     max-width: 100%;
+    margin: 15px auto;
 }
 
 .site-header {
@@ -201,4 +202,12 @@ code.url{
 
 .light-border{
     border: 2px solid #dedede;
+}
+
+article.hentry {
+    padding: 10px 15px 15px 20px;
+}
+
+.hentry p{
+    margin: 10px auto 15px;
 }
