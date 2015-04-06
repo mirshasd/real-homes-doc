@@ -211,3 +211,22 @@ article.hentry {
 .hentry p{
     margin: 10px auto 15px;
 }
+
+table{
+    padding: 5px;
+    margin: 20px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+table td,
+table th{
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+table th.attributes,
+table th.defaults{
+    width: 18%;
+}
+
