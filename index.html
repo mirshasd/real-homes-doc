@@ -149,6 +149,8 @@
                                     </span>
                                 </a>
                                 <ul class="sub-menu">
+                                    <li><a class="sub-menu-item" href="#testimonials-setup">Testimonials</a></li>
+                                    <li><a class="sub-menu-item" href="#faqs-setup">FAQs</a></li>
                                     <li><a class="sub-menu-item" href="#mortgage-widget">Mortgage Calculator Widget</a></li>
                                     <li><a class="sub-menu-item" href="#twitter-widget">Twitter Widget</a></li>
                                     <li><a class="sub-menu-item" href="#featured-properties-widget">Featured Properties</a></li>
@@ -1154,6 +1156,35 @@
                         </div>
                     </article>
 
+                    <article class="hentry" id="testimonials-setup">
+                        <div class="entry-content">
+                            <h1 class="entry-title">How to set up Testimonials Page</h1>
+                            <p>I have developed <a target="_blank" href="https://wordpress.org/plugins/quick-and-easy-testimonials/">Quick and Easy Testimonials</a> plugin for this purpose.</p>
+                            <ol>
+                                <li>
+                                    Install the <a target="_blank" href="https://wordpress.org/plugins/quick-and-easy-testimonials/">Quick and Easy Testimonials</a> plugin. As guided in screen shot below.
+                                    <br/>
+                                    <img class="light-border" src="assets/realhomes/widgets/testimonials-1.png" alt=""/>
+                                </li>
+                                <li>
+                                    After installing and activating the plugin. You can add testimonials as displayed in screenshot below.
+                                    <br/>
+                                    <img class="light-border" src="assets/realhomes/widgets/testimonials-2.png" alt=""/>
+                                </li>
+                                <li>
+                                    Later on you can use following shortcodes to display testimonials on a page.
+                                    <ul>
+                                        <li>Display all testimonials. Shortcode <code>[testimonials]</code></li>
+                                        <li>Display specific number of testimonials. Shortcode <code>[testimonials count="3"]</code></li>
+                                        <li>Display only testimonials related to a category. Shortcode <code>[testimonials filter="category-slug"]</code></li>
+                                        <li>Display single testimonial. Shortcode <code>[testimonials id="123"]</code></li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            <hr/>
+                        </div>
+                    </article>
+
                     <article class="hentry" id="mortgage-widget">
                         <div class="entry-content">
                             <h1 class="entry-title">How to set up Mortgage Calculator Widget</h1>
@@ -1293,6 +1324,10 @@
                     <article class="hentry" id="currency-switcher">
                         <div class="entry-content">
                             <h1 class="entry-title">How to set up Currency Switcher</h1>
+                            <p class="text-warning bg-warning">
+                                <strong>Updated Note:</strong> We recently learned from our experience that this feature is not stable yet and I would not recommend you to use it for now.
+                                Actually, it’s related API produce inconsistencies with currency conversion data while updating currency exchange rates. So, We are working on making it stable in future updates.
+                            </p>
                             <p>We will use <a target="_blank" href="https://wordpress.org/plugins/wp-currencies/">WP Currencies</a> plugin to add currency switcher.</p>
                             <ol>
                                 <li>
