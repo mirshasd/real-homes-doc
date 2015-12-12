@@ -13,6 +13,11 @@ img {
     margin: 15px auto;
 }
 
+h1, .h1, h2, .h2, h3, .h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 .site-header {
     padding-top: 25px;
 }
@@ -151,7 +156,7 @@ img {
 
 /* content styles */
 .page-content {
-    margin-top: 40px;
+    margin-top: 15px;
 }
 
 .page-content > article.hentry {
@@ -173,6 +178,11 @@ img {
 
 .bg-warning{
     padding: 25px 30px;
+}
+
+.important-box {
+    padding: 10px 30px;
+    border: 5px solid #dedede;
 }
 
 .tf-link-btn {
@@ -202,11 +212,11 @@ code.url{
 }
 
 .light-border{
-    border: 2px solid #dedede;
+    border: 5px solid #dedede;
 }
 
 article.hentry {
-    padding: 10px 15px 15px 20px;
+    padding: 5px 15px 15px 15px;
 }
 
 .hentry p{

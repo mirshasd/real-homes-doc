@@ -52,7 +52,7 @@ $(document).ready(function(){
             targetArticle.siblings('.hentry.current').hide();
             targetArticle.addClass('current' ).fadeIn();
 
-            var subMenuItem = $("a.sub-menu-item[href*=#" + targetHash + "]"); // find related sub menu item
+            var subMenuItem = $("a.sub-menu-item[href*=" + targetHash + "]"); // find related sub menu item
             if ( subMenuItem.length > 0 ) {
                 subMenuItem.addClass('active');                         // add active class to sub menu item
                 var targetSubMenu = subMenuItem.closest('ul.sub-menu'); // find parent sub menu for target sub menu item

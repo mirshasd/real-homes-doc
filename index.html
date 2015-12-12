@@ -224,8 +224,10 @@
 
                 <main class="page-content" >
 
-                    <a id="view-all" href="">View All</a>
-                
+                    <div class="text-right">
+                        <a id="view-all" href="">View All</a>
+                    </div>
+
                     <article class="hentry" id="inspiry-introduction">
                         <div class="entry-content">
                             <h2 class="entry-title">Introduction</h2>
@@ -241,7 +243,7 @@
                             <h3>How to Update Theme</h3>
                             <p>If you want to update your theme then you can consult <a href="http://support.inspirythemes.com/knowledgebase/update-theme-using-envato-wordpress-toolkit/">this knowledge base article for automatic update</a> OR you can consult <a target="_blank" href="http://support.inspirythemes.com/knowledgebase/better-way-to-update-wordpress-theme/">this knowledge base article for manual update</a>.</p>
 
-                            <div style="padding: 10px 30px; background-color: #eee;">
+                            <div class="important-box">
                                 <h3>Support Policy</h3>
                                 <strong>Support Includes</strong>
                                 <ul>
@@ -262,16 +264,24 @@
                     <article class="hentry" id="inspiry-install-theme">
                         <div class="entry-content">
                             <h2 class="entry-title">Install Theme</h2>
-                            <p>In start you must have a working version of WordPress. For information in regard to installing the WordPress, Kindly consult  WordPress Codex <a target="_blank" href="http://codex.wordpress.org/Installing_WordPress">Installing WordPress</a>.</p>
-                            <p>Once you have a working of version of WordPress, You need to download <a data-lightbox="all-files" href="assets/common-images/all-files.png">"All Files and Documentation"</a> from themeforest's download page and extract the downloaded zip to get various files including <strong>realhomes.zip</strong>.</p>
 
-                            <h4>Step 1: Install Theme Via WordPress Dashboard</h4>
+                            <h3>Get Prepared</h3>
+                            <p>To start you must have a working version of WordPress. Almost all major web hosts provides one click WordPress install and you can consult your host's help site for more information in this regard. For manual install you can consult  WordPress Codex <a target="_blank" href="http://codex.wordpress.org/Installing_WordPress">Installing WordPress</a>.</p>
+
+                            <p>Once you have a working version of WordPress, You need to download <a data-lightbox="all-files" href="assets/common-images/all-files.png">"All Files and Documentation"</a> from <a href="http://themeforest.net/downloads" target="_blank">themeforest download page</a> and extract the downloaded zip to get various files including <strong>realhomes.zip</strong>.</p>
+
+                            <hr>
+
+                            <h3>Install Theme Via WordPress Dashboard ( Recommended Way ) </h3>
 
                             <ol>
                                 <li>Go to 'Appearance &gt; Themes' section</li>
                                 <li>Click 'Add New' and select the 'Upload Theme' option
                                     <br/>
                                     <img class="light-border" src="assets/realhomes/install/1.png" alt=""/>
+                                </li>
+                                <li>Click 'Upload Theme'
+                                    <br>
                                     <img class="light-border" src="assets/realhomes/install/1-1.png" alt=""/>
                                 </li>
                                 <li>Choose the <strong>realhomes.zip</strong> file and press 'Install Now'
@@ -282,32 +292,32 @@
                                     <br/>
                                     <img class="light-border" src="assets/realhomes/install/1-3.png" alt=""/>
                                 </li>
-                                <li>Activating theme will take you to the theme options, <strong>Save the Theme Options Once</strong> So that theme options default values gets stored in the database.</li>
+                                <li>After activation go to "Appearance &gt; Theme Options" and <em>Save the Theme Options Once</em> to initialize default values in database.</li>
                             </ol>
-                            <p class="bg-info text-info">
-                                if you face any problem during upload through dashboard, please upload the theme using FTP as guided below.
-                            </p>
+                            <p>if you face any problem during upload through dashboard, please upload the theme using FTP as guided below.</p>
 
+                            <hr>
 
-                            <h3>Step 1(Alternative): Install Theme Via FTP</h3>
+                            <h3>Install Theme Via FTP ( Alternative Way )</h3>
                             <ol>
                                 <li>Access your hosting server using an ftp client like <a target="_blank" href="https://filezilla-project.org/">FileZilla</a></li>
                                 <li>Go to the 'wp-content/themes' folder of your WordPress installation</li>
                                 <li>Extract the <strong>realhomes.zip</strong> file and put the <strong>realhomes</strong> folder in 'wp-content/themes/' folder</li>
                                 <li>Go to 'WordPress Dashboard &gt; Appearance &gt; Themes' section to activate the theme</li>
-                                <li>Activating theme will take you to the theme options, <strong>Save the Theme Options Once</strong> So that theme options default values gets stored in the database.</li>
+                                <li>After activation go to "Appearance &gt; Theme Options" and <em>Save the Theme Options Once</em> to initialize default values in database.</li>
                             </ol>
 
+                            <br>
+
+                            <div class="important-box">
+                                <h3>Install Child Theme ( Highly Recommended )</h3>
+                                <p>It is highly recommended to use <strong>child theme</strong>, So that you can easily update parent theme whenever a new update becomes available. A pre-built ready to use child theme is included in the main theme pack that you have downloaded from themeforest.</p>
+                                <p>To install child theme, You need to upload the <strong>realhomes-child.zip</strong> and activate it in the same way as you have uploaded and activated parent theme's <strong>realhomes.zip</strong>.</p>
+                            </div>
+
+                            <br>
+                            <p class="text-center"><strong>Next Step is to Import Demo Contents</strong></p>
                             <hr/>
-
-                            <h3>Step 2: Install Child Theme</h3>
-                            <p>It is better to use child theme as if you need to modify anything you modify in child theme only. This way you can easily update your parent theme whenever new update becomes available on themeforest. You can read more about child theme from <a target="_blank" href="http://codex.wordpress.org/Child_Themes">here.</a> </p>
-                            <p>To install child theme, you need to upload the <strong>realhomes-child.zip</strong> and activate it in the same way as you uploaded and activated the parent theme's <strong>realhomes.zip</strong>.</p>
-
-                            <hr/>
-
-                            <p><strong>Next Step is to Import Demo Contents</strong></p>
-
                         </div>
                     </article>
 
