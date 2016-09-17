@@ -256,6 +256,30 @@
                                 It is highly recommended to use <strong>child theme</strong>, So that you can easily update parent theme whenever a new update becomes available. A pre-built ready to use child theme is included in the main theme pack that you might have downloaded from themeforest.
                             </p>
 
+                            <div class="important-box">
+                                <h3>Few Performance Improvement Tips</h3>
+
+								<strong>Basic Recommendations</strong>
+                                <ul>
+                                    <li>Use PHP 7.0 as it is faster than previous versions. ( You can communicate with your host to get it done. )
+                                    <li>Make sure your hosting is based on SSD drives.
+									<li>It is recommended that you should use a VPS instead of shared hosting as it gives you better resources to work on.
+									<li>Use a good cache plugin and test your site properly after installing and configuring it.
+                                </ul>
+
+								<strong>Real Homes Specific</strong>
+								<ul>
+									<li>Do not unify (combine) JavaScript files for Real Homes theme while using a cache plugin ( or any optimisation plugin ) as it is not an average blog theme and certain scripts are only loaded when required.
+									Also, dynamic data is generated before few scripts based on various settings. So, Combining JavaScript files can create errors.
+									<li>Real Homes uses following cookies (if related settings are enabled). So, You can configure your cache plugin to not cache pages that uses these cookies OR you can request the same from your host if your host is like WPEngine ( who do not allow cache plugin and handles the cache on server level ).
+										<ul>
+											<li><code>inspiry_compare</code></li>
+											<li><code>inspiry_favorites</code></li>
+											<li><code>current_currency</code></li>
+										</ul>
+								</ul>
+                            </div>
+
                             <h3>How to Update Theme</h3>
                             <p>If you want to update your theme then you can consult <a href="http://support.inspirythemes.com/knowledgebase/update-theme-using-envato-wordpress-toolkit/">this knowledge base article for automatic update</a> OR you can consult <a target="_blank" href="http://support.inspirythemes.com/knowledgebase/better-way-to-update-wordpress-theme/">this knowledge base article for manual update</a>.</p>
 
