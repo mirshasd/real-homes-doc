@@ -147,6 +147,22 @@
                             <li>
                                 <a href="#" class="menu-item">
                                     <span class="main-menu-item">
+                                        <i class="glyphicon glyphicon-credit-card"></i>Setting Up Membership<span class="glyphicon glyphicon-chevron-right"></span>
+                                    </span>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a class="sub-menu-item" href="#ims-installation">Installation</a></li>
+                                    <li><a class="sub-menu-item" href="#ims-basic-settings">Basic Settings</a></li>
+                                    <li><a class="sub-menu-item" href="#ims-stripe-settings">Stripe Settings</a></li>
+                                    <li><a class="sub-menu-item" href="#ims-paypal-settings">PayPal Settings</a></li>
+                                    <li><a class="sub-menu-item" href="#ims-wire-settings">Wire Settings</a></li>
+                                    <li><a class="sub-menu-item" href="#ims-creating-membership">Creating Membership Packages</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#" class="menu-item">
+                                    <span class="main-menu-item">
                                         <i class="glyphicon glyphicon-star"></i>Widgets<span class="glyphicon glyphicon-chevron-right"></span>
                                     </span>
                                 </a>
@@ -1651,6 +1667,211 @@
                         </div>
                     </article>
 
+                    <article class="hentry" id="inspiry-ims-installation">
+                        <div class="entry-content">
+                            <h2 class="entry-title">Inspiry Memberships Installation</h2>
+                            <p>You can install and setup <a href="https://wordpress.org/plugins/inspiry-memberships/" target="_blank"><strong>Inspiry Memberships Plugin</strong></a> to setup membership packages.</p>
+                            <ol>
+                                <li>Please navigate to <strong>Dashboard</strong> > <strong>Plugins</strong> > <strong>Add New</strong> and search for <strong>"Inspiry Memberships"</strong> as shown in the screenshot below:
+                                    <br/>
+                                    <img class="light-border" src="assets/realhomes/memberships/1.png" alt=""/>
+                                </li>
+                                <li>Once you have found it then click the <strong>"Install Now"</strong> link under the Inspiry Memberships for WordPress plugin in the list of results.</li>
+                                <li>Click the <strong>"Activate Plugin"</strong> link after the plugin has been installed.</li>
+                            </ol>
+                            <br />
+                            <h2 class="entry-title">Inspiry Memberships Welcome Page</h2>
+                            <p>After <strong>Inspiry Stripe Payments</strong> is actviated, you will be redirected to plugin's welcome page.</p>
+                            <img class="light-border" src="assets/realhomes/memberships/2.jpg" alt=""/>
+                            <p>You can start configuring the settings of the plugin by clicking on the <strong>Start Configuring</strong> button.</p>
+                            <hr />
+                            <h3>Configuring Inspiry Memberships</h3>
+                            <p>To configure the plugin, please follow these steps:</p>
+                            <ol>
+                                <li><a href="#ims-basic-settings">Configure Basic Settings</a></li>
+                                <li><a href="#ims-stripe-settings">Configure Stripe Settings</a></li>
+                                <li><a href="#ims-paypal-settings">Configure PayPal Settings</a></li>
+                                <li><a href="#ims-wire-settings">Configure Wire Transfer Settings</a></li>
+                            </ol>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="inspiry-ims-basic-settings">
+                        <div class="entry-content">
+                            <h2 class="entry-title">Basic Settings</h3>
+                            <p>This section allows you to configure the following basic settings:</p>
+                            <ol>
+                                <li>Enable/Disable memberships.</li>
+                                <li>Enable/Disable recurring memberships.</li>
+                                <li>The currency code of the currency in which you are going to charge your customers.</li>
+                                <li>The symbol of the currency you are using.</li>
+                                <li>And the currency symbol position.</li>
+                            </ol>
+                            <img class="light-border" src="assets/realhomes/memberships/3.png" alt=""/>
+                            <p>Once you are done, click <strong>Next</strong> button to move to next step.</p>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="inspiry-ims-stripe-settings">
+                        <div class="entry-content">
+                            <h2 class="entry-title">Stripe Settings</h3>
+                            <p>This section belongs to the settings related to Stripe Payment System. You can:</p>
+                            <ol>
+                                <li>Enable/Disable Stripe Payments.</li>
+                                <li>Enable/Disable test mode of Stripe.</li>
+                                <li>Set API keys of Stripe account.</li>
+                                <li>Set the webhook URL of Stripe.</li>
+                            </ol>
+                            <img src="assets/realhomes/memberships/4.jpg" alt="" class="light-border" />
+                            <h4>How to register webhook URL</h4>
+                            <p><strong>Important: </strong>Webhook URL plays an important role in accepting recurring payments through Stripe. It is important to set the webhook URL correctly otherwise recurring memberships through Stripe will not work properly.</p>
+                            <p>Follow these instructions to register webhook URL:</p>
+                            <ol>
+                                <li>
+                                    Copy the URL present in the <strong>Stripe Webhook URL</strong> text box.
+                                    <br />
+                                    <img src="assets/realhomes/memberships/5.png" alt="" class="light-border" />
+                                </li>
+                                <li>Go to <a href="https://dashboard.stripe.com/account/webhooks">Webhook Settings</a> present in the Stripe Dashboard.</li>
+                                <li>
+                                    Click on <strong>Add endpoint...</strong> button present on the top right corner of the Endpoints box.
+                                    <br />
+                                    <img src="assets/realhomes/memberships/6.png" alt="" class="light-border" />
+                                </li>
+                                <li>
+                                    Paste the URL you copied earlier in the <strong>URL</strong> text box.
+                                </li>
+                                <li>
+                                    Then select the mode in which you will be using Stripe. After finishing, click on <strong>Create Endpoint</strong> button to add the URL to Stripe.
+                                    <br />
+                                    <img src="assets/realhomes/memberships/7.png" alt="" class="light-border" />
+                                </li>
+                            </ol>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="inspiry-ims-paypal-settings">
+                        <div class="entry-content">
+                            <h2 class="entry-title">PayPal Settings</h3>
+                            <p>This section belongs to the settings related to PayPal. You can:</p>
+                            <ol>
+                                <li>Enable/Disable PayPal Payments.</li>
+                                <li>Enable/Disable sandbox mode of PayPal.</li>
+                                <li>Set API keys of PayPal account.</li>
+                                <li>Set PayPal IPN URL.</li>
+                            </ol>
+                            <img src="assets/realhomes/memberships/8.jpg" alt="" class="light-border" />
+                            <h4>Get PayPal Client ID and Client Secret</h4>
+                            <p>Follow these instructions:</p>
+                            <ol>
+                                <li>Go to <a href="https://developer.paypal.com/developer/applications" target="_blank">Paypal developer Site.</a></li>
+                                <li>
+                                    Scroll down and click on <strong>Create App</strong> under the heading <strong>REST API apps</strong>.
+                                    <br />
+                                    <img src="assets/realhomes/memberships/9.png" alt="" class="light-border" />
+                                </li>
+                                <li>
+                                    Choose name of your app and click Create App.
+                                    <br />
+                                    <img src="assets/realhomes/memberships/10.png" alt="" class="light-border" />
+                                </li>
+                                <li>
+                                    Now you can see and manage your client ID and secret.
+                                    <br />
+                                    <img src="assets/realhomes/memberships/11.png" alt="" class="light-border" />
+                                </li>
+                            </ol>
+                            <h4>Create PayPal API Signature</h4>
+                            <p>Follow these instructions:</p>
+                            <ol>
+                                <li>For live credentials, log in to your PayPal business account at <a href="www.paypal.com" target="_blank">www.paypal.com</a>. For test credentials, log in to the PayPal Sandbox at <a href="www.sandbox.paypal.com" target="_blank">www.sandbox.paypal.com</a> using a Sandbox business test account.</li>
+                                <li>
+                                    Click <strong>Profile</strong> on the top right side of the page. From the Business Profile menu, select Profile and Settings.
+                                    <br />
+                                    <img src="assets/realhomes/memberships/12.png" alt="" class="light-border" />
+                                </li>
+                                <li>
+                                    From the left menu, click <strong>Request API credentials</strong>.
+                                    <br />
+                                    <img src="assets/realhomes/memberships/13.png" alt="" class="light-border" />
+                                </li>
+                                <li>
+                                    In <strong>Request API credentials</strong> section, click <strong>Set up PayPal API credentials and permissions</strong>.
+                                    <br />
+                                    <img src="assets/realhomes/memberships/14.png" alt="" class="light-border" />
+                                </li>
+                                <li>
+                                    To generate the API signature, click <strong>View API Signature</strong> on the API Access page.
+                                    <br />
+                                    <img src="assets/realhomes/memberships/15.png" alt="" class="light-border" />
+                                </li>
+                                <li>
+                                    To view API Username, Password, Signature, click <strong>Show</strong>.
+                                    <br />
+                                    <img src="assets/realhomes/memberships/16.png" alt="" class="light-border" />
+                                </li>
+                            </ol>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="inspiry-ims-wire-settings">
+                        <div class="entry-content">
+                            <h2 class="entry-title">Wire Transfer Settings</h3>
+                            <p>This section belongs to the settings related to Wire Transfer. You can:</p>
+                            <ol>
+                                <li>Enable/Disable payments via Wire Transfer.</li>
+                                <li>Provide instructions for wire transfer.</li>
+                                <li>Provide account name.</li>
+                                <li>Provide account number.</li>
+                            </ol>
+                            <img src="assets/realhomes/memberships/17.jpg" alt="" class="light-border" />
+                            <p>Click on <strong>Finish</strong> button once done.</p>
+                            <hr />
+                            <h3>Activating Membership</h3>
+                            <p>
+                                All the memberships bought throught wire transfers require manual activation.
+                                Once the payment confirmation is received, membership has to be activated manually.
+                                To activate the membership manually, go to the user receipt, check the <strong>Membership Status</strong> checkbox and click <strong>Update</strong> button to activate the membership.
+                                <br />
+                                <img src="assets/realhomes/memberships/24.jpg" alt="" class="light-border" />
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="hentry" id="inspiry-ims-creating-membership">
+                        <div class="entry-content">
+                            <h2 class="entry-title">Creating Membership Packages</h2>
+                            <p>To create membership packages, follow these instructions:</p>
+                            <ol>
+                                <li>
+                                    Go to <strong>Dashboard > Memberships</strong>
+                                    <br />
+                                    <img src="assets/realhomes/memberships/18.jpg" alt="" class="light-border" />
+                                </li>
+                                <li>Click on <strong>Add New Membership</strong> button.</li>
+                                <li>
+                                    Fill the details related to membership and then click <strong>Publish</strong> button.
+                                    <br />
+                                    <img src="assets/realhomes/memberships/19.jpg" alt="" class="light-border" />
+                                </li>
+                                <li>If you are creating a recurring membership package through Stripe then paste the ID of that package in the <strong>Stripe Subscription Plan ID</strong> text field.</li>
+                            </ol>
+                            <p class="alert alert-danger">
+                                <strong>Important: </strong>Please note that once users start buying membership package, you cannot delete those packages. If you want to delete the package, then change the status of membership from <strong>Publish</strong> to <strong>Pending</strong>.
+                                You can change the status to "Pending" by clicking on <strong>Edit</strong> present after "Publish" status. Select <strong>Pending Review</strong>, then click <strong>OK</strong> and then <strong>Update</strong> button to update the status of membership.
+                                <br />
+                                <img src="assets/realhomes/memberships/22.png" alt="" class="light-border" style="width: 300px" />
+                                <img src="assets/realhomes/memberships/21.png" alt="" class="light-border" style="width: 300px" />
+                                <img src="assets/realhomes/memberships/23.png" alt="" class="light-border" style="width: 300px" />
+                            </p>
+                            <h2 class="entry-title">User Membership View</h3>
+                            <p>After creating membership packages, they will automatically start appearing on <strong>Edit Profile</strong> page.</p>
+                            <p>The users can view, buy and control their packages from this page.</p>
+                            <img src="assets/realhomes/memberships/20.png" alt="" class="light-border" />
+                            <p>Please contact us at <a href="https://support.inspirythemes.com/ask-question/">our support</a> in case of any query or confusion.</p>
+                        </div>
+                    </article>
+
                     <article class="hentry" id="inspiry-testimonials-setup">
                         <div class="entry-content">
                             <h2 class="entry-title">How to set up Testimonials Page</h2>
@@ -1936,7 +2157,7 @@
                     <article class="hentry" id="inspiry-stripe-payments">
                         <div class="entry-content">
                             <h2 class="entry-title">Inspiry Stripe Payments Installation & Setup</h2>
-                            You can install and setup <strong><a href="https://wordpress.org/plugins/inspiry-stripe-payments/" target="_blank">Inspiry Stripe Payments Plugin</strong></a> to accept payments for properties through Stripe.</p>
+                            <p>You can install and setup <strong><a href="https://wordpress.org/plugins/inspiry-stripe-payments/" target="_blank">Inspiry Stripe Payments Plugin</strong></a> to accept payments for properties through Stripe.</p>
 
                             <ol>
                                 <li>Please navigate to <strong>Dashboard</strong> > <strong>Plugins</strong> > <strong>Add New</strong> and search for <strong>"Inspiry Stripe Payments"</strong> as shown in the screenshot below:
@@ -2417,7 +2638,6 @@
                             </ol>
                         </div>
                     </article>
-
 
 					<article class="hentry" id="inspiry-compare-properties">
 						<div class="entry-content">
