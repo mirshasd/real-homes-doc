@@ -39,6 +39,27 @@ $(document).ready(function(){
     });
 
 
+    $('body').on('click', '.suggestions li a',function(){
+        var targetHash =  $(this).attr('href' ).substr(1);
+        var targetID = '#'+ 'inspiry-' + targetHash;  // represent an article id attribute
+
+        $('.main-menu').find('.active').removeClass('active');
+        var subMenuItem = $("a.sub-menu-item[href$=" + targetHash + "]");
+        subMenuItem.addClass('active');
+
+        // $('ul.sub-menu').slideUp();
+        var targetSubMenu = subMenuItem.closest('ul.sub-menu'); // find parent sub menu for target sub menu item
+        targetSubMenu.parent('li').siblings().find('ul.sub-menu').slideUp();                              // display sub menu
+        targetSubMenu.slideDown().addClass('active');                              // display sub menu
+        targetSubMenu.parent('li').addClass('active');          // find parent main menu item and add active class to it
+
+        var currentArticle = $('.page-content').find( targetID );
+        if ( currentArticle.length ) {
+            currentArticle.siblings('.hentry.current').fadeOut();
+            currentArticle.addClass('current').fadeIn();
+        }
+    });
+
     /**
      *  Open the right article on 1st load if the URL has a hash
      */
