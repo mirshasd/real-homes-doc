@@ -58,6 +58,8 @@ $(document).ready(function(){
             currentArticle.siblings('.hentry.current').fadeOut();
             currentArticle.addClass('current').fadeIn();
         }
+
+        $('.suggestions').slideUp('fast');
     });
 
     /**
