@@ -274,16 +274,16 @@
 
                 <main class="page-content" >
 
-                    <div class="text-right">
+                    <div class="pull-right">
                         <a id="view-all" href="">View All</a>
                     </div>
 
-                    <div id="search-doc">
-                        <form action="#">
-                            <input type="text" class="search">
+                    <div class="search-container">
+                        <form>
+                            <span class="icon"><img src="assets/images/search.png" alt="Search"></span>
+                            <input type="text" class="search" placeholder="Search...">
                         </form>
                         <ul class="suggestions">
-                            <li><a href="#">Filter for a page</a></li>
                         </ul>
                     </div>
 
@@ -3205,6 +3205,7 @@
         }
 
         function displayMatches(){
+
             const matchArray = findMatch(this.value, links);
             const html = matchArray.map(link => {
 
