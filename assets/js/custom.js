@@ -38,7 +38,9 @@ $(document).ready(function(){
         e.preventDefault();
     });
 
-
+    /**
+     * Search Documentation
+     */
     $('body').on('click', '.suggestions li a',function(){
         var targetHash =  $(this).attr('href' ).substr(1);
         var targetID = '#'+ 'inspiry-' + targetHash;  // represent an article id attribute
@@ -47,7 +49,6 @@ $(document).ready(function(){
         var subMenuItem = $("a.sub-menu-item[href$=" + targetHash + "]");
         subMenuItem.addClass('active');
 
-        // $('ul.sub-menu').slideUp();
         var targetSubMenu = subMenuItem.closest('ul.sub-menu'); // find parent sub menu for target sub menu item
         targetSubMenu.parent('li').siblings().find('ul.sub-menu').slideUp();                              // display sub menu
         targetSubMenu.slideDown().addClass('active');                              // display sub menu
@@ -60,6 +61,16 @@ $(document).ready(function(){
         }
 
         $('.suggestions').slideUp('fast');
+    });
+
+    var searchInpute = $('input.search');
+
+    searchInpute.on('focus', function(){
+       $('ul.suggestions').slideDown('fast');
+    });
+
+    searchInpute.on('blur', function(){
+        $('ul.suggestions').slideUp('fast');
     });
 
     /**
