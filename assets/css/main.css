@@ -325,7 +325,7 @@ table th.defaults{
     border-radius: 3px;
 
     max-height: 400px;
-    overflow: scroll;
+    overflow-y: scroll;
     z-index: 9999;
 }
 
