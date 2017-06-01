@@ -42,6 +42,7 @@ $(document).ready(function(){
      * Search Documentation
      */
     $('body').on('click', '.suggestions li a',function(){
+
         var targetHash =  $(this).attr('href' ).substr(1);
         var targetID = '#'+ 'inspiry-' + targetHash;  // represent an article id attribute
 
@@ -61,6 +62,7 @@ $(document).ready(function(){
         }
 
         $('.suggestions').slideUp('fast');
+
     });
 
     var searchInpute = $('input.search');

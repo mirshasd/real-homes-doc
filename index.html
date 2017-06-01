@@ -283,8 +283,7 @@
                             <span class="icon"><img src="assets/images/search.png" alt="Search"></span>
                             <input type="text" class="search" placeholder="Search...">
                         </form>
-                        <ul class="suggestions">
-                        </ul>
+                        <ul class="suggestions"></ul>
                     </div>
 
                     <article class="hentry" id="inspiry-introduction">
@@ -3199,9 +3198,9 @@
 
         function findMatch(wordToMatch, links){
             return links.filter(link => {
-                const regex = new RegExp(wordToMatch, 'gi');
-                return link.textContent.match(regex);
-            });
+                            const regex = new RegExp(wordToMatch, 'gi');
+                            return link.textContent.match(regex);
+                        });
         }
 
         function displayMatches(){
@@ -3209,11 +3208,11 @@
             const matchArray = findMatch(this.value, links);
             const html = matchArray.map(link => {
 
-                if (link.hash != '') {
-                    return `<li><a href="${link.hash}">${link.textContent}</a></li>`;
-                }
+                        if (link.hash != '') {
+                return `<li><a href="${link.hash}">${link.textContent}</a></li>`;
+            }
 
-            }).join('');
+        }).join('');
 
             suggestions.innerHTML = html;
         }
@@ -3223,7 +3222,6 @@
 
         searchInput.addEventListener('change', displayMatches);
         searchInput.addEventListener('keyup', displayMatches);
-
     </script>
 </body>
 </html>

@@ -348,4 +348,5 @@ table th.defaults{
     padding: 10px 20px;
     display: inline-block;
     text-decoration: none;
+    width: 100%;
 }
