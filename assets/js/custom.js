@@ -65,14 +65,8 @@ $(document).ready(function(){
 
     });
 
-    var searchInpute = $('input.search');
-
-    searchInpute.on('focus', function(){
+    $('input.search').on('focus', function(){
        $('ul.suggestions').slideDown('fast');
-    });
-
-    searchInpute.on('blur', function(){
-        $('ul.suggestions').slideUp('fast');
     });
 
     /**
