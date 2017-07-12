@@ -246,7 +246,6 @@ table th.defaults{
     margin: 0;
 }
 
-
 /* Search Doc */
 .search-container {
     width: 300px;
@@ -349,4 +348,14 @@ table th.defaults{
     display: inline-block;
     text-decoration: none;
     width: 100%;
+}
+
+.align-img-center {
+    display: table;
+    margin: 0 auto;
+}
+
+.p20x {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
