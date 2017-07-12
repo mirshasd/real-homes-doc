@@ -286,8 +286,16 @@
 
                 <main class="page-content" >
 
-                    <div class="text-right">
+                    <div class="pull-right">
                         <a id="view-all" href="">View All</a>
+                    </div>
+
+                    <div class="search-container">
+                        <form>
+                            <span class="icon"><img src="assets/images/search.png" alt="Search"></span>
+                            <input type="text" class="search" placeholder="Search...">
+                        </form>
+                        <ul class="suggestions"></ul>
                     </div>
 
                     <article class="hentry" id="inspiry-introduction">
@@ -3274,5 +3282,40 @@
     <script type="text/javascript" src="assets/js/lightbox.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/custom.js"></script>
+    <script type="text/javascript" >
+        /**
+         * Search Documentation
+         */
+        const menu = document.querySelector('.nav-main');
+        const links = Array.from(menu.querySelectorAll('a'));
+
+        function findMatch(wordToMatch, links){
+            return links.filter(link => {
+                            const regex = new RegExp(wordToMatch, 'gi');
+                            return link.textContent.match(regex);
+                        });
+        }
+
+        function displayMatches(){
+
+            const matchArray = findMatch(this.value, links);
+            const html = matchArray.map(link => {
+
+                        if (link.hash != '') {
+                return `<li><a href="${link.hash}">${link.textContent}</a></li>`;
+            }
+
+        }).join('');
+
+            suggestions.innerHTML = html;
+        }
+
+        searchInput = document.querySelector('input.search');
+        suggestions = document.querySelector('ul.suggestions');
+
+
+        searchInput.addEventListener('change', displayMatches);
+        searchInput.addEventListener('keyup', displayMatches);
+    </script>
 </body>
 </html>
